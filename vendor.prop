@@ -88,6 +88,9 @@ ro.vendor.display.sensortype=2
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/system/etc/SVIConfig.xml
 persist.vendor.max.brightness=448
+persist.sys.sf.color_mode=9
+persist.sys.sf.native_mode=2
+persist.sys.sf.color_saturation=1.1
 ro.vendor.colorpick_adjust=true
 ro.vendor.cabc.enable=true
 
