@@ -398,5 +398,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
+# Android Q lmkd
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/core/lmkd/bin/lmkd:$(TARGET_COPY_OUT_SYSTEM)/bin/lmkd \
+    $(LOCAL_PATH)/core/lmkd/etc/init/lmkd.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/lmkd.rc
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mt6768-common/mt6768-common-vendor.mk)
